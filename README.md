@@ -1,2 +1,2 @@
-# Towards-Image-Compression-and-Analysis-with-Transformers
+# Image-Compression-and-Analysis-with-Transformers
 Update soon.
