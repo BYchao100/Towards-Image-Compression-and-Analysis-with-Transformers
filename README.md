@@ -51,6 +51,7 @@ The `./ckp_s_q1/checkpoint.pth`, `./ckp_s_q2/checkpoint.pth` and `./ckp_s_q3/che
 
 * Train
 
+Please download `./pretrain_s/checkpoint.pth` from [Baidu Netdisk](https://pan.baidu.com/s/1RFXeKEzRn7mWk7ay0mQh_Q), with access code `aaai`.
 Please adjust `--data-path` and `--quality`, respectively.
 
 | quality | alpha | beta | 
