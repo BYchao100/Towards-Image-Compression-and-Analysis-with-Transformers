@@ -5,7 +5,7 @@ Source code of our AAAI 2022 paper "Towards End-to-End Image Compression and Ana
 ## Usage
 The code is run with `Python 3.7`, `Pytorch 1.8.1`, `Timm 0.4.9` and `Compressai 1.1.4`.
 
-#### Data preparation
+### Data preparation
 Download and extract ImageNet train and val images from http://image-net.org/.
 The directory structure is the standard layout for the torchvision [`datasets.ImageFolder`](https://pytorch.org/vision/stable/datasets.html?highlight=imagefolder#torchvision.datasets.ImageFolder), and the training and validation data is expected to be in the `train` folder and `val` folder respectively:
 
@@ -23,7 +23,7 @@ The directory structure is the standard layout for the torchvision [`datasets.Im
       img4.jpeg
 ```
 
-#### Pretrained model
+### Pretrained model
 The `./pretrained_model` provides the pretrained model without compression.
 * Test
 
@@ -39,7 +39,7 @@ Please adjust `--data-path` and run `sh train.sh`:
 python -m torch.distributed.launch --nproc_per_node=8 --use_env main.py --model pretrained_model --no-model-ema --clip-grad 1.0 --batch-size 128 --num_workers 16 --data-path /path/to/imagenet/ --output_dir ./ckp_pretrain
 ```
 
-#### Full model
+### Full model
 The `./full_model` provides the full model with compression.
 * Test
 
