@@ -1,0 +1,1 @@
+python main.py --eval --resume ./pretrain_s/checkpoint.pth --model pretrained_model --data-path /path/to/imagenet/ --output_dir ./eval

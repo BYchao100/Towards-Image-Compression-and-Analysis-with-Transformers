@@ -1,0 +1,1 @@
+python -m torch.distributed.launch --nproc_per_node=8 --use_env main.py --model full_model --batch-size 128 --num_workers 16 --clip-grad 1.0 --quality 1 --data-path /path/to/imagenet/ --output_dir ./ckp_full

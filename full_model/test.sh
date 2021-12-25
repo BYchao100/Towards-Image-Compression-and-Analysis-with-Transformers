@@ -1,0 +1,1 @@
+python main.py --eval --resume ./ckp_s_q1/checkpoint.pth --model full_model --no-pretrained --data-path /path/to/imagenet/ --output_dir ./eval

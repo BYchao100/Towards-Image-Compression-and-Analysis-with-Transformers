@@ -1,0 +1,1 @@
+python -m torch.distributed.launch --nproc_per_node=8 --use_env main.py --model pretrained_model --no-model-ema --clip-grad 1.0 --batch-size 128 --num_workers 16 --data-path /path/to/imagenet/ --output_dir ./ckp_pretrain
