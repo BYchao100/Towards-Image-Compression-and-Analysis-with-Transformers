@@ -59,7 +59,7 @@ Please download `./pretrain_s/checkpoint.pth` from [Baidu Netdisk](https://pan.b
 | 2 | 0.3 | 0.003 |
 | 3 | 0.6 | 0.006 |
 
-Run `sh train.sh`.
+Run `sh train.sh`:
 ```
 python -m torch.distributed.launch --nproc_per_node=8 --use_env main.py --model full_model --batch-size 128 --num_workers 16 --clip-grad 1.0 --quality 1 --data-path /path/to/imagenet/ --output_dir ./ckp_full
 ```
