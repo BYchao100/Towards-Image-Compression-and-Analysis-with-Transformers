@@ -1,0 +1,1 @@
+Place the corresponding checkpoint.pth in this folder.
